@@ -1,12 +1,25 @@
+<style>
+body
+{
+padding-top:10px;
+}
+body
+{
+background:url('resources/images/.jpg') no-repeat;
+background-size:cover;
+}
+</style>
+
+
 <div class="jumbotron">
 <div class="container text-left">
 <div class="row">
 <div class="col-md-3">
-<a href="#" class="navbar-brand">FOOD FARE <img src="resources/images/greenleaf-logo.png" alt="logo" style="width:40%; height:400%;"></a>
+<a href="#" class="navbar-brand">WHITE PEARL <img src="resources/images/logo.jpg" alt="logo" style="width:40%; height:350%;"></a>
 </div>
 <div class="col-md-5">
 <div class="container text-center">
-<h3>welcome to food fare</h3>
+<h3>WELCOME TO WHITE PEARL</h3>
 </div>
 </div>
 <div class="col-md-4">
@@ -31,30 +44,30 @@
  </ol>
    <div class="carousel-inner">
    <div class="item active" id="slide1">
-   <img src="resources/images/newc1.jpg" class="img-responsive" alt="text of the image" style="width:100%; hieght:50px;">
+   <img src="resources/images/carousel-1.jpg" class="img-responsive" alt="text of the image" style="width:100%; hieght:50px;">
    <div class="carousel-caption">
-   <h4>this is a slide</h4>
+   <h4></h4>
    
    </div>
    </div>
     <div class="item" id="slide2">
-    <img src="resources/images/new2.jpg" class="img-responsive" alt="text of the image" style="width:100%; hieght:50px;">
+    <img src="resources/images/carousel-2.jpg" class="img-responsive" alt="text of the image" style="width:100%; hieght:50px;">
    <div class="carousel-caption">
-   <h4>this is a slide</h4>
+   <h4></h4>
   
    </div>
    </div>
     <div class="item" id="slide3">
-    <img src="resources/images/newc1.jpg" class="img-responsive" alt="text of the image" style="width:100%; hieght:50px;">
+    <img src="resources/images/carousel-3.jpg" class="img-responsive" alt="text of the image" style="width:100%; hieght:50px;">
    <div class="carousel-caption">
-   <h4>this is a slide</h4>
+   <h4></h4>
    
    </div>
    </div>
     <div class="item" id="slide4">
-    <img src="resources/images/newc4.jpg" class="img-responsive" alt="text of the image" style="width:100%; hieght:50px;">
+    <img src="resources/images/carousel-4.jpg" class="img-responsive" alt="text of the image" style="width:100%; hieght:50px;">
    <div class="carousel-caption">
-   <h4>this is a slide</h4>
+   <h4></h4>
    
    </div>
    </div>
@@ -71,26 +84,26 @@
 <br>
 <br>
 <div class="container">
-<center><strong class="heading">Today<span></span> Special</strong></center>
+<center><strong class="heading">NEW<span></span>ARRIVALS </strong></center>
 <div class="row">
 <div class="col-md-4">
 <div class="well">
-<img src="resources/images/bf.jpg" class="img-responsive">
-<p class="text-justify-center" style="font-size:17px;">Breakfast</p>
+<img src="resources/images/nack.jpg" class="img-responsive">
+<p class="text-justify-center" style="font-size:17px;">Bridal</p>
 <p class="text-center"><a href="" class="btn btn-primary">Read More</a></p>
 </div>
 </div>
 <div class="col-md-4">
 <div class="well">
-<img src="resources/images/lunch.jpg" class="img-responsive">
-<p class="text-justify" style="font-size:17px;"> Lunch</p>
+<img src="resources/images/delicate-rings.jpg" class="img-responsive">
+<p class="text-justify" style="font-size:17px;"> Daily Wear</p>
 <p class="text-center"><a href="" class="btn btn-primary">Read More</a></p>
 </div>
 </div>
 <div class="col-md-4">
 <div class="well">
-<img src="resources/images/dinner.jpg" class="img-responsive">
-<p class="text-justify" style="font-size:17px;">Dinner</p>
+<img src="resources/images/piaget2.jpg" class="img-responsive">
+<p class="text-justify" style="font-size:17px;">Gifts</p>
 <p class="text-center"><a href="" class="btn btn-primary">Read More</a></p>
 </div>
 </div>

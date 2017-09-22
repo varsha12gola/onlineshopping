@@ -5,7 +5,7 @@ padding-top:10px;
 }
 body
 {
-background:url('resources/images/contact-1.jpg') no-repeat;
+background:url('resources/images/bg2.jpg') no-repeat;
 background-size:cover;
 }
 </style>

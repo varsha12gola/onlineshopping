@@ -71,7 +71,8 @@ public class ProductDAOImpl implements ProductDAO {
 
 			sessionFactory.getCurrentSession().update(product);
 			return true;
-		} catch (Exception ex) {
+		}
+		 catch (Exception ex) {
 			ex.printStackTrace();
 		}
 		return false;

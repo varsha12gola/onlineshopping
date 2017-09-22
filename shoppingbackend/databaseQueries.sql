@@ -10,9 +10,11 @@ CREATE TABLE Category (
 	
 );
 
- INSERT INTO category (name,description,image_url,is_active) VALUES ('WOODEN WORK','THIS IS THE DESCRIPTION OF WOODEN ITEMS!','CAT_3.pgn',true);
- INSERT INTO category (name,description,image_url,is_active) VALUES ('POTTERY','THIS IS THE DESCRIPTION OF POTTERY ITEMS!','CAT_4.pgn',true);
- INSERT INTO category (name,description,image_url,is_active) VALUES ('METAL WORK','THIS IS THE DESCRIPTION OF METAL ITEMS!','CAT_5.pgn',true);
+ INSERT INTO category (name,description,image_url,is_active) VALUES ('RINGS','THIS IS THE DESCRIPTION OF RING!','rings.jpg',true);
+ INSERT INTO category (name,description,image_url,is_active) VALUES ('BANGLES','THIS IS THE DESCRIPTION OF BANGLES!','bangles.jpg',true);
+ INSERT INTO category (name,description,image_url,is_active) VALUES ('PENDANTS','THIS IS THE DESCRIPTION OF PANDANTS!','pendant.jpg',true);
+ INSERT INTO category (name,description,image_url,is_active) VALUES ('EARINGS','THIS IS THE DESCRIPTION OF EARINGS!','american-diamond-earring.jpg',true);
+ INSERT INTO category (name,description,image_url,is_active) VALUES ('NACKLACES','THIS IS THE DESCRIPTION OF NACKLACES!','nacklace-1.jpg',true);
  
  CREATE TABLE user_detail(
  
@@ -30,11 +32,11 @@ CREATE TABLE Category (
  
  INSERT INTO user_detail
  (first_name, last_name, role, enabled, password, email, contact_number)
- VALUES ('Virat', 'Kohli', 'ADMIN', true, 'admin', 'vk@gmail.com', '8888888888');
+ VALUES ('Varsha', 'gola', 'ADMIN', true, 'admin', 'vg@gmail.com', '8888888888');
  
  INSERT INTO user_detail
  (first_name, last_name, role, enabled, password, email, contact_number)
- VALUES ('Ravindra', 'Jadeja', 'SUPPLIER', true, '12345', 'rj@gmail.com', '9999999999');
+ VALUES ('Ram', 'Jadeja', 'SUPPLIER', true, '12345', 'rj@gmail.com', '9999999999');
  
  INSERT INTO user_detail
  (first_name, last_name, role, enabled, password, email, contact_number)
@@ -61,19 +63,19 @@ CREATE TABLE Category (
  );
  
  INSERT INTO product(code, name, brand, description, unit_price, quantity, is_active, category_id, supplier_id)
- VALUES ('PRDABC123DEFX', 'WOODEN CRAFT', 'ZAORI', 'this is one of the best usable product for home!', 12000, 5, true, 3, 2 );
+ VALUES ('PRDABC123DEFX', 'RINGS', 'PARINEETA', 'this is one of the best ring!', 1200, 5, true, 3, 2 );
  
  INSERT INTO product(code, name, brand, description, unit_price, quantity, is_active, category_id, supplier_id)
- VALUES ('PRDDEF123DEFX', 'SOFT TOY', 'LEGO', 'LOVABLE TO ALL!', 6000, 2, true, 3, 3 );
+ VALUES ('PRDDEF123DEFX', 'BANGLES', 'RIVAAZ', 'LOVABLE TO ALL!', 6000, 2, true, 3, 3 );
  
  INSERT INTO product(code, name, brand, description, unit_price, quantity, is_active, category_id, supplier_id)
- VALUES ('PRDABC123WGTX', 'BLUE POTTERY', 'AUREA', 'this is one of the finest pottery!', 1999, 5, true, 3, 2 );
+ VALUES ('PRDABC123WGTX', 'PENDANTS', 'TANISHQ', 'this is new!', 1999, 5, true, 3, 2 );
  
  INSERT INTO product(code, name, brand, description, unit_price, quantity, is_active, category_id, supplier_id)
- VALUES ('PRDABC3DEFX', 'METAL WORK', 'EXCLUSIVELANE', 'this is one of the best usable product for home!', 16000, 3, true, 1, 2 );
+ VALUES ('PRDABC3DEFX', 'EARINGS', 'NAKSHATRA', 'this is one of the best for party!', 2000, 3, true, 1, 2 );
  
  INSERT INTO product(code, name, brand, description, unit_price, quantity, is_active, category_id, supplier_id)
- VALUES ('PRDABCWWFX', 'JEWELLERY BOX', 'HANDISTORE', 'this is one of the best usable product for home!', 12000, 5, true, 1, 3 );
+ VALUES ('PRDABCWWFX', 'NACKLACES', 'PCJ', 'this is one of the best for party!', 12000, 5, true, 1, 3 );
  
  
  

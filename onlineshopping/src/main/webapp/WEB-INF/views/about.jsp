@@ -1,10 +1,21 @@
+<style>
+body
+{
+padding-top:10px;
+}
+body
+{
+background:url('resources/images/bg1.jpg') no-repeat;
+background-size:cover;
+}
+</style>
 <section>
 <div class="well">
  <div class="container text-center">
  <h3>
-food fare
+WHITE PEARL
  </h3>
-  <p> eat something awesome </p>
+  <p> TRY SOMETHING OWESOME</p>
  </div>
 </div>
 
@@ -19,31 +30,31 @@ FEATURES
 <div class="container">
 <div class="row"> 
 <div class="col-md-4">
-<img src="images/spic1.jpg"class="img-responsive"
+<img src="resources/images/nacklace-1.jpg"class="img-responsive"
  alt="image" style="width=100px; height=100px;">
 <h3>this is the heading</h3>
-<p>yummy food</p>
+<p>necklace</p>
 <br>
 <br>
 <br>
-<img src="resources/images/spic2.jpg"class="img-responsive"
+<img src="resources/images/images (3).jpg"class="img-responsive"
  alt="image" style="width=100px; height=100px;">
 <h3>this is the heading</h3>
 </div>
 <div class="col-md-4">
-<img src="resources/images/spic3.jpg" class="img-responsive"
+<img src="resources/images/images (6).jpg" class="img-responsive"
  alt="image" style="width=100px; height=100px;">
 </div>
 <div class="col-md-4">
-<img src="resources/images/image/pao bhaji.png" class="img-responsive"
+<img src="resources/images/graff1.jpg" class="img-responsive"
  alt="image" style="width=100px; height=100px;">
 <h3>this is the heading</h3>
-<p>yummy food</p>
+<p></p>
 <br>
 <br>
 <br>
 
-<img src="resources/images/image/Ramzan Fasting 1.jpg" class="img-responsive"
+<img src="resources/images/winston.jpg" class="img-responsive"
  alt="image" style="width=100px; height=100px;">
 <h3>this is the heading</h3>
 </div>
@@ -74,8 +85,8 @@ FEATURES
 <div class="col-md-4">
 <div class="panel panel-default text-center" >
 <div class="panel-body">
-<h4>food fare</h4>
-<p>eat delicious</p>
+<h4>pearl jweles</h4>
+<p></p>
 </div>
 </div>
 </div>
