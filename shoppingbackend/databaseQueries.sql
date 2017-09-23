@@ -69,13 +69,13 @@ CREATE TABLE Category (
  VALUES ('PRDDEF123DEFX', 'BANGLES', 'RIVAAZ', 'LOVABLE TO ALL!', 6000, 2, true, 3, 3 );
  
  INSERT INTO product(code, name, brand, description, unit_price, quantity, is_active, category_id, supplier_id)
- VALUES ('PRDABC123WGTX', 'PENDANTS', 'TANISHQ', 'this is new!', 1999, 5, true, 3, 2 );
+ VALUES ('PRDABC123WGTX', 'PENDANTS', 'TANISHQ', 'this is new!', 1999, 0, true, 3, 2 );
  
  INSERT INTO product(code, name, brand, description, unit_price, quantity, is_active, category_id, supplier_id)
  VALUES ('PRDABC3DEFX', 'EARINGS', 'NAKSHATRA', 'this is one of the best for party!', 2000, 3, true, 1, 2 );
  
  INSERT INTO product(code, name, brand, description, unit_price, quantity, is_active, category_id, supplier_id)
- VALUES ('PRDABCWWFX', 'NACKLACES', 'PCJ', 'this is one of the best for party!', 12000, 5, true, 1, 3 );
+ VALUES ('PRDABCWWFX', 'NACKLACES', 'PCJ', 'this is one of the best for party!', 12000, 1, true, 1, 3 );
  
  
  
