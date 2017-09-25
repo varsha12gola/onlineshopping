@@ -14,8 +14,11 @@ case'About Us':
 case'Contact Us':
 	$('#contact').addClass('active');
 	break;
-case'All Product':
+case'All Products':
 	$('#listProduct').addClass('active');
+	break;
+case'Manage Products':
+	$('#manageProducts').addClass('active');
 	break;
 	default:
 		if(menu == "Home") break;
@@ -123,7 +126,24 @@ case'All Product':
 	});
 		
 
-	}	
+	}
+	//dismissing the alert after 3 seconds
+	
+	var $alert = $('.alert');
+	
+	if($alert.length) {
+		
+		setTimeout(function()  {
+			$alert.fadeOut('slow');
+		} , 3000)
+		
+	}
+	
+	
+	
+	
+	
+	
 });
 
  
