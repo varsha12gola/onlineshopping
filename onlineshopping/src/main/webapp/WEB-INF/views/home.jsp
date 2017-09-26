@@ -32,7 +32,7 @@ background-size:cover;
 <div class="container">
 <div class="row">
 <div class="col-md-3">
-<%@include file="./shared/sidebar.jsp" %>
+<%@include file="./shared/sidebar.jsp" %>   
 </div>
 <div class="col-md-9">
 <div class="carousel slide" data-interval="2000" id="myCarousel">

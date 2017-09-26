@@ -18,7 +18,6 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.niit.onlineshopping.util.FileUploadUtility;
-import com.niit.onlineshopping.validator.ProductValidator;
 import com.niit.shoppingbackend.dao.CategoryDAO;
 import com.niit.shoppingbackend.dao.ProductDAO;
 import com.niit.shoppingbackend.dto.Category;
@@ -65,9 +64,9 @@ public class ManagementController {
 	//handling products submission
 
 	@RequestMapping(value="/products", method=RequestMethod.POST)
-	public String handleProductSubmission(@Valid @ModelAttribute("product") Product mProduct, BindingResult results, Model model, HttpServletRequest request)  {
+	public String handleProductSubmission(@Valid @ModelAttribute("product") Product mProduct, BindingResult results, Model model,
+			HttpServletRequest request )  {
 		
-		new ProductValidator().validate(mProduct, results);
 		
 		
 		
@@ -89,14 +88,12 @@ public class ManagementController {
 		//create a new product record
 		productDAO.add(mProduct);
 		
-		//create a new product record
-		productDAO.add(mProduct);
-		
 		if(!mProduct.getFile().getOriginalFilename().equals("")) {
-			 FileUploadUtility.uploadFile(request, mProduct.getFile(), mProduct.getCode());
-			
+			FileUploadUtility.uploadFile(request, mProduct.getFile(), mProduct.getCode());
 			
 		}
+	
+		
 		
 		
 		

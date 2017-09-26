@@ -138,12 +138,7 @@ case'Manage Products':
 		} , 3000)
 		
 	}
-	
-	
-	
-	
-	
-	
+
 });
 
  

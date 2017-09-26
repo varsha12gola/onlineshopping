@@ -33,7 +33,8 @@
 
 					<sf:form class="form-horizontal" modelAttribute="product"
 						action="${contextRoot}/manage/products" method="POST"
-						enctype="multipart/form-data">
+						enctype="multipart/form-data"
+						>
 
 						<div class="form-group">
 
@@ -109,22 +110,19 @@
 							</div>
 
 						</div>
+                    <!-- file element for image upload -->
+                     <div class="form-group">
 
-						<!-- File element for image upload -->
-
-						<div class="form-group">
-
-							<label class="control-label col-md-4" for="file"> Select
-								an Image:</label>
+							<label class="control-label col-md-4" for="file">Select an Image: </label>
 
 							<div class="col-md-8">
 
-								<sf:input type="file" path="file" id="file" class="form-control" />
-                              <sf:errors path="file" cssClass="help-block" element="em" />
-                              
+								<sf:input type="file" path="file" id="file"
+									 class="form-control" />
+
 							</div>
 
-						</div>
+						</div>						
 
 
 						<div class="form-group">
@@ -140,7 +138,7 @@
 
 							</div>
 
-						</div>
+						</div> 
 
 						<div class="form-group">
 
@@ -168,12 +166,9 @@
 
 
 				</div>
-
-			</div>
-
-
-
-		</div>
+	           </div>
+         </div>
 
 	</div>
+
 </div>
