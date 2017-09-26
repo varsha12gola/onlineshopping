@@ -119,7 +119,7 @@
 
 								<sf:input type="file" path="file" id="file"
 									 class="form-control" />
-
+                           <sf:errors path="file" cssClass="help-block" element="em"/>
 							</div>
 
 						</div>						
