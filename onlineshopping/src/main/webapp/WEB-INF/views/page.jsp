@@ -103,11 +103,8 @@
 			<!-- datatable bootstrap script -->
 			<script src="${js}/dataTables.bootstrap.js"></script>
 			
-			<!-- bootbox
-			<script src="${js}/bootbox.min.js"></script> -->
-			
-			
-			
+			<!-- datatable bootbox script -->
+			<script src="${js}/bootbox.min.js"></script>
 			
 			<!-- self coded javascript -->
 		<script src="${js}/shopstyle.js"></script>
