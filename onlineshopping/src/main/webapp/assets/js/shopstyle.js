@@ -319,7 +319,7 @@ case'Manage Products':
 				name : {
 					
 					required: 'Please add the category name!',
-					minlength: 'The category name should be less than 2 character'
+					minlength: 'The category name should not be less than 2 character'
 				},
 				
 				description:{
