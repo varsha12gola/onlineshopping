@@ -1,5 +1,7 @@
 package com.niit.shoppingbackend.daoimpl;
 
+import java.util.List;
+
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
@@ -47,10 +49,10 @@ public class UserDAOImpl implements UserDAO {
 	}
 
 	@Override
-	public boolean addCart(Cart cart) {
+	public boolean updateCart(Cart cart) {
 		
 		try {
-			sessionFactory.getCurrentSession().persist(cart);
+			sessionFactory.getCurrentSession().update(cart);
 			return true;
 		}
 		
@@ -59,6 +61,61 @@ public class UserDAOImpl implements UserDAO {
 			return false;
 		}
 	
+	}
+
+	@Override
+	public User getByEmail(String email) {
+		String selectQuery = "FROM User WHERE email = :email";
+		
+		try {
+			
+			return sessionFactory.getCurrentSession()
+					.createQuery(selectQuery,User.class)
+					.setParameter("email", email)
+					.getSingleResult();
+			
+		}
+		catch(Exception ex) {
+			ex.printStackTrace();
+			return null;
+		}
+	}
+
+	@Override
+	public Address getBillingAddress(User user) {
+	
+		String selectQuery = "FROM Address WHERE user = :user AND billing = :billing";
+		
+		try {
+			return sessionFactory.getCurrentSession()
+					.createQuery(selectQuery, Address.class)
+					.setParameter("user", user)
+					.setParameter("billing", true)
+					.getSingleResult();
+		}
+		catch(Exception ex) {
+			ex.printStackTrace();
+			return null;
+		}
+		
+	}
+	
+	  
+	@Override
+	public List<Address> listShippingAddresses(User user) {
+String selectQuery = "FROM Address WHERE user = :user AND shipping = :shipping";
+		
+		try {
+			return sessionFactory.getCurrentSession()
+					.createQuery(selectQuery, Address.class)
+					.setParameter("user", user)
+					.setParameter("shipping", true)
+					.getResultList();
+		}
+		catch(Exception ex) {
+			ex.printStackTrace();
+			return null;
+		}
 	}
 
 }

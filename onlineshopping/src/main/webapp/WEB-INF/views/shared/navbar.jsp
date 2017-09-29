@@ -17,19 +17,28 @@
 <li id="contact"><a href="${contextRoot}/contact"><span class="glyphicon glyphicon-earphone"> Contact Us</span></a></li>
 <li id="listProducts"><a href="${contextRoot}/show/all/products"><span class="glyphicon glyphicon-folder-open"> View Products</span></a></li>
 <li id="manageProducts"><a href="${contextRoot}/manage/products"><span> Manage Products</span></a></li>
-
 </ul>
+
 <!-- <form class="navbar-form navbar-left" role="search">
 	<div class="form-group">
 	<input type="text" class="form-control" placeholder="search">
 	</div>
 	<button type="submit" class="btn btn-default">Submit</button>
-</form> -->
+</form>
 <ul class="nav navbar-nav navbar-right">
 
 <li id="registration"><a href="${contextRoot}/registration">Register</a></li>
 <li id="login"><a href="${contextRoot}/login">Login</a></li>
+</ul> -->
+
+<ul class="nav navbar-nav navbar-right">
+<li id="register"><a href="${contextRoot}/register"><span> Sign Up</span></a></li>
+<li id="login"><a href="${contextRoot}/login"><span> Login</span></a></li>
+
 </ul>
+
+
+
 </div>
 </div>
 </nav>
