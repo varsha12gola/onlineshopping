@@ -9,7 +9,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import com.niit.shoppingbackend.dao.UserDAO;
 import com.niit.shoppingbackend.dto.Address;
-import com.niit.shoppingbackend.dto.Cart;
+//import com.niit.shoppingbackend.dto.Cart;
 import com.niit.shoppingbackend.dto.User;
 
 @Repository("userDAO")
@@ -48,20 +48,7 @@ public class UserDAOImpl implements UserDAO {
 	
 	}
 
-	@Override
-	public boolean updateCart(Cart cart) {
-		
-		try {
-			sessionFactory.getCurrentSession().update(cart);
-			return true;
-		}
-		
-		catch(Exception ex) {
-			ex.printStackTrace();
-			return false;
-		}
 	
-	}
 
 	@Override
 	public User getByEmail(String email) {
@@ -76,7 +63,7 @@ public class UserDAOImpl implements UserDAO {
 			
 		}
 		catch(Exception ex) {
-			ex.printStackTrace();
+			//ex.printStackTrace();
 			return null;
 		}
 	}
@@ -117,5 +104,7 @@ String selectQuery = "FROM Address WHERE user = :user AND shipping = :shipping";
 			return null;
 		}
 	}
+
+	
 
 }

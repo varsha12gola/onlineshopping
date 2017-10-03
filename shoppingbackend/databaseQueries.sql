@@ -23,7 +23,7 @@ CREATE TABLE Category (
  	last_name VARCHAR(50),
  	role VARCHAR(50),
  	enabled BOOLEAN,
- 	password VARCHAR(50),
+ 	password VARCHAR(60),
  	email VARCHAR(100),
  	contact_number VARCHAR(15),
  	CONSTRAINT pk_user_id PRIMARY KEY(id),
@@ -32,15 +32,20 @@ CREATE TABLE Category (
  
  INSERT INTO user_detail
  (first_name, last_name, role, enabled, password, email, contact_number)
- VALUES ('Varsha', 'gola', 'ADMIN', true, 'admin', 'vg@gmail.com', '8888888888');
+ VALUES ('Varsha', 'gola', 'ADMIN', true, '$2a$06$xCB2NVwKCFS3DChup7gP1Ox6OEHGt09vOAupvLyaHYQn5yD1ysNcm', 'vg@gmail.com', '8888888888');
  
  INSERT INTO user_detail
  (first_name, last_name, role, enabled, password, email, contact_number)
- VALUES ('Ram', 'Jadeja', 'SUPPLIER', true, '12345', 'rj@gmail.com', '9999999999');
+ VALUES ('Ram', 'Jadeja', 'SUPPLIER', true, '$2a$06$IDRaeeCp3De0JY7paB7L5O8OjZFff7EYGS/bQL2t5IdoWEPpV5xpm', 'rj@gmail.com', '9999999999');
  
  INSERT INTO user_detail
  (first_name, last_name, role, enabled, password, email, contact_number)
- VALUES ('Ravichandra', 'Ashwin', 'SUPPLIER', true, '12345', 'ra@gmail.com', '7777777777');
+ VALUES ('Ravi', 'Arora', 'SUPPLIER', true, '$2a$06$oVzW0MHAF/D/VvuceeD.bOixZHoJIDBgLkPoRzzUYUClVKXYpfEYy', 'ra@gmail.com', '7777777777');
+ 
+  
+ INSERT INTO user_detail
+ (first_name, last_name, role, enabled, password, email, contact_number)
+ VALUES ('Neetu', 'Swaroop', 'USER', true, '$2a$06$yuU7IqzbiF.7bqhzd6.Xj.HygV5RlWp.x581JF.31wEpovIire.AW', 'ns@gmail.com', '6666666666');
  
  
  CREATE TABLE product(
@@ -77,7 +82,23 @@ CREATE TABLE Category (
  INSERT INTO product(code, name, brand, description, unit_price, quantity, is_active, category_id, supplier_id)
  VALUES ('PRDABCWWFX', 'NACKLACES', 'PCJ', 'this is one of the best for party!', 12000, 1, true, 1, 3 );
  
- 
+ -- the cart line table to store the cart details
+
+CREATE TABLE cart_line (
+	id IDENTITY,
+	cart_id int,
+	total DECIMAL(10,2),
+	product_id int,
+	product_count int,
+	buying_price DECIMAL(10,2),
+	is_available boolean,
+	CONSTRAINT fk_cartline_cart_id FOREIGN KEY (cart_id ) REFERENCES cart (id),
+
+	CONSTRAINT fk_cartline_product_id FOREIGN KEY (product_id ) REFERENCES product (id),
+
+	CONSTRAINT pk_cartline_id PRIMARY KEY (id)
+);
+
  
  
  

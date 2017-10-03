@@ -184,8 +184,9 @@
 </div>
 
 <div class="col-xs-12">
+<div class="container-fluid">
 
-<div style="overflow:auto">
+<div class="table-responsive">
 
 <!-- product table for admin  -->
 
@@ -205,10 +206,6 @@
 </tr>
 </thead>
 
-
-
-
- 
 <tfoot>
 <tr>
 
@@ -226,6 +223,13 @@
 
 </tfoot>
 </table>
+
+</div>
+
+</div>
+
+
+
 </div>
 
 </div>
@@ -278,4 +282,3 @@ method="POST" class="form-horizontal">
 </div>
 
 
-</div>

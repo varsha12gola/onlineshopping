@@ -1,4 +1,4 @@
-<p class="lead">MENU</p>
+<p class="lead"></p>
 	
 	<div class="list-group">
 	

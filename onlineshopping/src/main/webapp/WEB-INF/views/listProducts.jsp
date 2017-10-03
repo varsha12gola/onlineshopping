@@ -60,7 +60,11 @@ background-size:cover;
 
         <div class = "row">
 				<div class="col-xs-12">
-					<table id="productListTable" class="table table-striped table-bordered">
+				<div class="container-fluid">
+				
+				<div class="table-responsive">
+				
+				<table id="productListTable" class="table table-striped table-bordered">
 
 						<thead>
  
@@ -88,6 +92,12 @@ background-size:cover;
                         
                         
                       </table>
+				
+				</div>
+				
+				
+				</div>
+					
 					</div>
 				</div>
 	</div>
